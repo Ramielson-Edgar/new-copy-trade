@@ -1,0 +1,560 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--dark-500);
+  background-color: var(--light);
+}
+
+:root {
+  --light: #fff;
+  --blue-100: #F9FAFF;
+  --blue-150: #DCEFFF;
+  --blue-500: #42A5F5;
+  --blue-700: #008AF9;
+  --blue-900: #05529E;
+  --red-100: #FFDDDC;
+  --red-300: #EC5350;
+  --red-500: #E53935;
+  --green-100: #C8F3E5;
+  --green-500: #4CD7AB;
+  --green-700: #1EFFB8;
+  --dark-300: #939393;
+  --dark-400: #4B4B4B;
+  --dark-500: #232323;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+video,
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.section-padding {
+  padding: 70px 0;
+}
+
+.text-gradient {
+  color: var(--blue-500);
+}
+
+.btn-base {
+  display: inline-block;
+  border-radius: 5px;
+  color: var(--light);
+  border: 1px solid transparent;
+  text-transform: capitalize;
+  outline: none;
+  box-shadow: none;
+}
+.btn-base:hover {
+  transform: translateY(-8px);
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-blue-white {
+  background-color: var(--blue-500);
+}
+.btn-blue-white:hover, .btn-blue-white:focus {
+  color: var(--blue-500);
+  background-color: transparent;
+  border: 1px solid var(--blue-500);
+}
+
+.btn-green-red {
+  background-color: var(--green-500);
+}
+.btn-green-red:hover, .btn-green-red:focus {
+  color: var(--light);
+  background-color: var(--red-300);
+  border: 1px solid var(--red-300);
+}
+
+.btn-blue-red {
+  background-color: var(--blue-500);
+}
+.btn-blue-red:hover, .btn-blue-red:focus {
+  color: var(--light);
+  background-color: var(--red-300);
+  border: 1px solid var(--red-300);
+}
+
+.btn-light-blue {
+  color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+.btn-light-blue:hover, .btn-light-blue:focus {
+  color: var(--light);
+  background-color: var(--blue-500);
+  border: 1px solid var(--blue-500);
+}
+
+.btn-red-green {
+  color: var(--light);
+  background-color: var(--red-500);
+}
+.btn-red-green:hover, .btn-red-green:focus {
+  color: var(--light);
+  background-color: var(--green-500);
+}
+
+.btn-white-red {
+  color: #003763;
+  background-color: var(--light);
+}
+.btn-white-red:hover, .btn-white-red:focus {
+  color: var(--light);
+  background-color: var(--red-500);
+}
+
+.btn-base-small {
+  padding: 10px 20px;
+}
+
+.btn-base-lg {
+  padding: 10px 40px;
+}
+
+.light-blue {
+  background-color: #FDFDFF;
+}
+
+.copy-trade-benefits__list, .copy-trade-platform__list, .copy-trade-success__list, .copy-trade-advantage__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn-base {
+  text-decoration: none;
+}
+.btn-base:hover, .btn-base:focus {
+  text-decoration: none;
+}
+
+.copy-trade-benefits__item, .copy-trade-platform__link svg, .copy-trade-success__item, .btn-base {
+  transition: 0.3s ease-in;
+}
+
+.copy-trade-benefits__text, .copy-trade-step__description, .copy-trade-platform__item-text, .copy-trade-platform__text, .copy-trade-success__text, .copy-trade-hero__description {
+  color: var(--dark-400);
+}
+
+.copy-trade-reg__title, .copy-trade-step__title, .copy-trade-platform__title, .copy-trade-success__title {
+  font-size: clamp(1rem, 0.62rem + 1.62vw, 1.88rem);
+}
+
+.copy-trade-hero-img {
+  position: relative;
+  top: 70px;
+  z-index: 2;
+}
+
+.copy-trade-hero__sub-description {
+  display: inline-block;
+  padding: 10px 37px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--green-500);
+  text-transform: uppercase;
+  background-color: var(--green-100);
+  border-radius: 11px;
+  margin-bottom: 19px;
+}
+
+.copy-trade-hero__title {
+  font-size: clamp(1.25rem, 0.44rem + 3.47vw, 3.13rem);
+}
+
+.copy-trade-hero__description,
+.copy-trade-hero__title {
+  margin-bottom: 23px;
+}
+
+.copy-trade-advantages {
+  padding: 100px 0 70px;
+  position: relative;
+  color: var(--light);
+  background-color: var(--dark-500);
+  z-index: 1;
+}
+
+.copy-trade-advantage__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.copy-trade-advantage__title {
+  margin-bottom: 7px;
+}
+
+.copy-trade-success__title {
+  margin-bottom: 20px;
+}
+
+.copy-trade-success__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 20px;
+}
+
+.copy-trade-success__item {
+  padding: 30px;
+  background-color: var(--light);
+  box-shadow: 20px 30px 70px rgba(158, 158, 158, 0.1);
+  border-radius: 13px;
+}
+.copy-trade-success__item:hover {
+  transform: translateY(-8px);
+}
+
+.copy-trade-success__item-title {
+  font-size: clamp(0.88rem, 0.71rem + 0.69vw, 1.25rem);
+  margin-bottom: 5px;
+}
+
+.copy-trade-success__img-container {
+  flex-direction: column;
+  min-height: 152px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.copy-trade-success__item:first-child {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+.copy-trade-success__item:first-child:hover {
+  transform: unset;
+}
+
+.copy-trade-success__item:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  grid-column: span 2;
+  max-width: 400px;
+  background-color: transparent;
+  box-shadow: none;
+}
+.copy-trade-success__item:last-child:hover {
+  transform: unset;
+}
+
+.copy-trade-success__item:last-child .copy-trade-success__item-title {
+  font-size: 1rem;
+  margin-bottom: 22px;
+}
+
+.copy-trade-platform__header {
+  margin-bottom: 50px;
+}
+
+.copy-trade-platform-title {
+  color: #F4F4F4;
+  font-size: clamp(3.13rem, 2.31rem + 3.47vw, 5rem);
+  text-transform: uppercase;
+}
+
+.copy-trade-platform__title {
+  margin-bottom: 10px;
+}
+
+.copy-trade-platform__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.copy-trade-platform__item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 90px;
+  transition: all 0.1s ease-in;
+}
+.copy-trade-platform__item:hover {
+  background-color: var(--light);
+  box-shadow: 20px 30px 70px rgba(158, 158, 158, 0.1);
+  border-radius: 5px;
+}
+
+.copy-trade-platform__item svg {
+  margin-bottom: 30px;
+}
+
+.copy-trade-platform__item:last-child .copy-trade-platform__item-title {
+  font-size: clamp(1.25rem, 0.44rem + 3.47vw, 3.13rem);
+}
+
+.copy-trade-platform__item:last-child .copy-trade-platform__item-text {
+  max-width: 300px;
+}
+
+.copy-trade-platform__item-title {
+  font-size: clamp(0.88rem, 0.71rem + 0.69vw, 1.25rem);
+  margin-bottom: 15px;
+}
+
+.copy-trade-platform__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.copy-trade-platform__link:focus, .copy-trade-platform__link:hover {
+  text-decoration: none;
+}
+
+.copy-trade-platform__item-text {
+  margin-bottom: 10px;
+}
+
+.copy-trade-platform__link:hover svg {
+  transform: translateX(8px);
+}
+
+.copy-trade-platform__link svg {
+  margin-bottom: 0;
+}
+
+.copy-trade-step {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.copy-trade-step__header {
+  margin-bottom: 50px;
+}
+
+.copy-trade-step__title {
+  margin-bottom: 10px;
+}
+
+.copy-trade-step__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy-trade-step__content,
+.copy-trade-step__video {
+  width: 50%;
+}
+
+.copy-trade-step__content {
+  padding: 100px 30px;
+}
+
+.copy-trade-step__content-title {
+  max-width: 400px;
+  font-size: clamp(0.88rem, 0.71rem + 0.69vw, 1.25rem);
+  margin-bottom: 15px;
+}
+
+.copy-trade-step__text {
+  font-size: 0.875rem;
+}
+
+.copy-trade-step__slide {
+  background-color: var(--light);
+}
+
+.owl-carousel .owl-stage-outer {
+  box-shadow: 20px 30px 70px rgba(158, 158, 158, 0.1);
+}
+
+.copy-trade-benefits {
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+}
+
+.copy-trade-benefits__text {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+.copy-trade-benefits__title {
+  margin-bottom: 15px;
+}
+
+.copy-trade-benefits__header {
+  margin-bottom: 50px;
+}
+
+.copy-trade-benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.copy-trade-benefits__img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-100);
+}
+
+.copy-trade-benefits__item {
+  box-shadow: 20px 30px 50px rgba(158, 158, 158, 0.1);
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.copy-trade-benefits__item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.copy-trade-benefits__img-container,
+.copy-trade-benefits__content {
+  padding: 30px;
+}
+
+.copy-trade-benefits__content {
+  background-color: var(--light);
+}
+
+.copy-trade-reg {
+  position: relative;
+  background-color: var(--light);
+  padding-top: 70px;
+}
+
+.copy-trade-reg-title {
+  font-size: clamp(3.13rem, -0.13rem + 13.87vw, 10.63rem);
+  color: #FAFAFA;
+}
+
+.copy-trade-reg__title {
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+.copy-trade-reg__form-wrapper {
+  position: absolute;
+  top: -250px;
+  padding: 50px 50px 10px 50px;
+  border-radius: 18px;
+  background-color: var(--light);
+  box-shadow: 22px 18px 70px -20px rgba(160, 160, 160, 0.15);
+}
+
+.copy-trade-reg__content {
+  padding-top: 150px;
+}
+
+.copy-trade-reg__form-field {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.copy-trade-reg__form-field .iti {
+  width: 100%;
+  display: block;
+}
+
+.copy-trade-reg__input {
+  width: 100%;
+  border-bottom: 1px solid var(--dark-300);
+  border-top: unset;
+  border-left: unset;
+  border-right: unset;
+}
+.copy-trade-reg__input:focus {
+  outline: unset;
+  border-bottom: 1px solid var(--blue-700);
+}
+
+.copy-trade-reg__input:focus + .copy-trade-reg__label {
+  top: -20px;
+  color: var(--blue-700);
+}
+
+.copy-trade-reg__input:focus + .copy-trade-reg__label.checkbox::after {
+  display: inline-block;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  background-color: var(--dark-300);
+}
+
+.copy-trade-reg__form-check {
+  display: flex;
+  align-items: baseline;
+}
+
+.copy-trade-reg__label-checkbox {
+  font-size: 0.813rem;
+}
+
+.copy-trade-reg__checkbox {
+  margin-right: 10px;
+}
+
+.copy-trade-reg__form-field .copy-trade-reg__label {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  font-size: 0.813rem;
+  height: 38px;
+  pointer-events: none;
+  transition: all 0.2s ease-in;
+}
+
+.country-select {
+  width: 100%;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 30%;
+  right: -5%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("../img/flags@2x.png");
+  }
+}/*# sourceMappingURL=style.css.map */

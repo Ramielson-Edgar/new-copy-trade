@@ -382,13 +382,14 @@ img {
 }
 
 .copy-trade-step__content-title {
-  max-width: 400px;
+  max-width: 350px;
   font-size: clamp(0.88rem, 0.71rem + 0.69vw, 1.25rem);
   margin-bottom: 15px;
 }
 
 .copy-trade-step__text {
   font-size: 0.875rem;
+  line-height: 24px;
 }
 
 .copy-trade-step__slide {
@@ -479,6 +480,7 @@ img {
 
 .copy-trade-reg__content {
   padding-top: 150px;
+  height: 100vh;
 }
 
 .copy-trade-reg__form-field {
@@ -545,12 +547,49 @@ img {
   width: 100%;
 }
 
-.owl-nav {
+.owl-theme .owl-dots {
   position: absolute;
-  top: 30%;
+  top: 50%;
   right: -5%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+}
+
+.owl-theme .owl-nav {
+  position: absolute;
+  top: 50%;
+  right: -7%;
+  transform: translate(-60%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+  margin-top: unset;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme .owl-dots .owl-dot span {
+  background-color: transparent;
+  height: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  color: var(--dark-300);
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  color: var(--dark-500);
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: transparent;
+}
+
+.owl.prev.disabled,
+.owl-next.disabled {
+  fill: var(--dark-300);
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

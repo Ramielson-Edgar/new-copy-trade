@@ -498,13 +498,14 @@ img {
 
 
 .copy-trade-step__content-title {
-    max-width: 400px;
+    max-width: 350px;
     font-size: $font-size-20-14;
     margin-bottom: 15px;
 }
 
 .copy-trade-step__text {
     font-size: $font-size-14;
+    line-height: 24px;
 }
 
 .copy-trade-step__slide {
@@ -599,6 +600,7 @@ img {
 
 .copy-trade-reg__content {
     padding-top: 150px;
+    height: 100vh;
 }
 
 .copy-trade-reg__form-field {
@@ -606,7 +608,10 @@ img {
     margin-bottom: 30px;
 }
 
-.copy-trade-reg__form-field .iti {width: 100%; display: block;}
+.copy-trade-reg__form-field .iti {
+    width: 100%;
+    display: block;
+}
 
 .copy-trade-reg__input {
     width: 100%;
@@ -644,7 +649,9 @@ img {
     font-size: $font-size-13;
 }
 
-.copy-trade-reg__checkbox {margin-right: 10px;}
+.copy-trade-reg__checkbox {
+    margin-right: 10px;
+}
 
 .copy-trade-reg__form-field .copy-trade-reg__label {
     position: absolute;
@@ -660,17 +667,57 @@ img {
     transition: all .2s ease-in;
 }
 
-.country-select {width: 100%;}
+.country-select {
+    width: 100%;
+}
 
-
-.owl-nav {
+.owl-theme .owl-dots {
     position: absolute;
-    top: 30%;
+    top: 50%;
     right: -5%;
+    transform: translate(-50%, -50%);
+
     display: flex;
     flex-direction: column;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .iti__flag {background-image: url("../img/flags@2x.png");}
-  }
+.owl-theme .owl-nav {
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    transform: translate(-60%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 50%;
+    margin-top: unset;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span,
+.owl-theme .owl-dots .owl-dot span {
+    background-color: transparent;
+    height: 20px;
+}
+
+.owl-theme .owl-dots .owl-dot span {color: var(--dark-300);}
+.owl-theme .owl-dots .owl-dot.active span {color: var(--dark-500);}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+}
+
+.owl.prev.disabled,
+.owl-next.disabled {
+    fill: var(--dark-300);
+}
+
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .iti__flag {
+        background-image: url("../img/flags@2x.png");
+    }
+}

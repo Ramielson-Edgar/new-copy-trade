@@ -463,8 +463,6 @@
                                     </div>
 
                                 </form>
-
-
                             </div>
 
                         </div>
@@ -491,7 +489,7 @@
             $('.copy-trade-step__slider').owlCarousel({
                 loop: false,
                 margin: 0,
-                dots: false,
+                dots: true,
                 nav: true,
                 items: 1,
                 autoplay: true,
@@ -501,10 +499,20 @@
                 autoplayHoverPause: true,
                 startPosition: "URLHash",
                 navText: [
-                    "<div class='slider-arrow arrow-right'><svg width='30' height='60'><use href='./icons/sprite.svg#icon-arrow-up'></use></svg></div>",
-                    "<div class='slider-arrow arrow-left'><svg width='30' height='60'><use href='./icons/sprite.svg#icon-arrow-down'></use></svg></div>",
+                    "<div class='slider-arrow arrow-up'><svg width='30' height='60'><use href='./icons/sprite.svg#icon-arrow-up'></use></svg></div>",
+                    "<div class='slider-arrow arrow-down'><svg width='30' height='60'><use href='./icons/sprite.svg#icon-arrow-down'></use></svg></div>",
 
                 ],
+
+
+                onInitialized: function (e) {
+                    $(e.target).find('.owl-dots .owl-dot').each(function (i, el) {
+                        $(el)
+                            .find('span')
+                            .html( i + 1)
+
+                    })
+                }
             })
 
             // jQuery 

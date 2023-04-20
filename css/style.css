@@ -311,7 +311,15 @@ img {
 .copy-trade-platform__item:hover {
   background-color: var(--light);
   box-shadow: 20px 30px 70px rgba(158, 158, 158, 0.1);
-  border-radius: 5px;
+}
+
+.copy-trade-platform__item:first-child,
+.copy-trade-platform__item:nth-child(3) {
+  border-right: 1px solid rgba(217, 217, 217, 0.2);
+}
+
+.copy-trade-platform__item:not(:nth-last-child(-n+2)) {
+  border-bottom: 1px solid rgba(217, 217, 217, 0.2);
 }
 
 .copy-trade-platform__item svg {

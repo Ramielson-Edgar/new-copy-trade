@@ -788,7 +788,7 @@ img {
 }
 
 .splide__slide-text {
-  color: var(--light);
+  color: var(--green-500);
   text-transform: uppercase;
 }
 

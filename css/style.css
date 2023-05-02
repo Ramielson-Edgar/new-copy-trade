@@ -679,7 +679,7 @@ img {
 .manage-icons {
   position: absolute;
   top: -30px;
-  left: 30px;
+  left: 10%;
   z-index: 3;
 }
 

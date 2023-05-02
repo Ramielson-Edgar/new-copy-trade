@@ -28,7 +28,7 @@
                         <picture>
                             <source media="(max-width:575px)" sizes="338px" srcset="./img/hero-img-icons-500.png">
                             <source media="(max-width:991px)" sizes="355px"  srcset="./img/hero-img-icons-900.png">
-                            <img class="img-fluid copy-trade-hero-icons" src="./img/hero-img-icons.png" alt="" height="434">
+                            <img class="img-fluid copy-trade-hero-icons" src="./img/hero-img-icons.png" alt="stocks and shares icons" height="434">
                         </picture>
                          
                         <picture>
@@ -157,7 +157,7 @@
 
                     <li class="copy-trade-success__item">
                         <div class="copy-trade-success__img-container">
-                            <img class="img-fluid" src="./icons/icon-control.svg" alt="" width="100" height="85">
+                            <img class="img-fluid" src="./icons/icon-control.svg" alt="svg icon controller" width="100" height="85">
                         </div>
 
                         <div class="copy-trade-success__body">
@@ -169,7 +169,7 @@
                     <li class="copy-trade-success__item">
                         <div class="copy-trade-success__img-container">
 
-                            <img src="./icons/icon-community.svg" alt="" width="112" height="85">
+                            <img src="./icons/icon-community.svg" alt="svg icon big planet" width="112" height="85">
                         </div>
 
                         <div class="copy-trade-success__body">
@@ -184,7 +184,7 @@
                     </li>
                     <li class="copy-trade-success__item">
                         <div class="copy-trade-success__img-container">
-                            <img src="./icons/icon-investment.png" alt="" width="164" height="85">
+                            <img src="./icons/icon-investment.png" alt="svg icon money stack" width="164" height="85">
                         </div>
 
                         <div class="copy-trade-success__body">
@@ -209,7 +209,7 @@
                 <div class="row align-items-center">
 
                     <div class="col-lg-6 col-md-10 m-md-auto">
-                        <img class="platform-icons" src="./img/platform-icons.png" alt="" width="500" height="450">
+                        <img class="platform-icons" src="./img/platform-icons.png" alt="images with closed trade" width="500" height="450">
                         <img class="img-fluid web-platform-img" src="./img/web-platform.png"
                             alt="phones with close trades" width="479" height="653">
 
@@ -237,7 +237,7 @@
                     <ul class="copy-trade-platform__list">
                         <li class="copy-trade-platform__item border-hover border-orange">
 
-                            <img class="img-fluid" src="./icons/icon-manual.svg" alt="" width="119" height="118">
+                            <img class="img-fluid" src="./icons/icon-manual.svg" alt="svg icon book with icons settings" width="119" height="118">
 
                             <div class="copy-trade-platform__body">
                                 <h2 class="copy-trade-platform__item-title">Manual</h2>
@@ -268,7 +268,7 @@
                         </li>
                         <li class="copy-trade-platform__item border-hover border-purple">
 
-                            <img class="img-fluid" src="./icons/icon-semi-automated.svg" alt="" width="83" height="91">
+                            <img class="img-fluid" src="./icons/icon-semi-automated.svg" alt="svg icon computer with icons settings" width="83" height="91">
 
                             <div class="copy-trade-platform__body">
 
@@ -416,18 +416,18 @@
                 <div class="wrapper">
                     <div class="container">
                         <div class="row align-items-center">
-                            <div class="col-lg-6 order-lg-1 row-padding">
-                                <img class="manage-icons" src="./img/mnanage-icons.png" alt="" width="500" height="480">
+                            <div class="col-lg-6 order-xl-1 order-lg-1 row-padding">
+                                <img class="manage-icons" src="./img/mnanage-icons.png" alt="black images with crypto currencies close trade" width="500" height="480">
                                 <img class="img-fluid copy-trade-manage-phones" src="./img/manage-portfolio.png"
                                     alt="two phones with statistics" width="643" height="641">
 
                                 <div class="copy-trade-manage-img">
                                     <h3 class="copy-trade-manage-title">managed</h3>
-                                    <img src="./img/trading-chart.png" alt="" width="300" height="300">
+                                    <img src="./img/trading-chart.png" alt="trading chart image" width="300" height="300">
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 order-lg-0 row-padding">
+                            <div class="col-lg-6 order-xl-0 order-lg-0 row-padding">
                                 <header class="copy-trade-manage__header">
                                     <h2 class="copy-trade-manage__title">
                                         Managed Portfolios
@@ -799,8 +799,17 @@
                     start: "top bottom",
                     scrub: 1,
                 },
-                y:70, 
+                y:100, 
             })
+
+            gsap.to(".copy-trade-manage-phones", {
+                scrollTrigger: {
+                    start: "top bottom",
+                    scrub: 1,
+                },
+                y:-20, 
+            })
+          
           
       
       

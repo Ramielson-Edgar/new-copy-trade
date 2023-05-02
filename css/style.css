@@ -12,20 +12,20 @@ body {
 
 :root {
   --light: #fff;
-  --blue-100: #F9FAFF;
-  --blue-150: #DCEFFF;
-  --blue-500: #42A5F5;
-  --blue-700: #008AF9;
-  --blue-800: #4A89F2;
-  --blue-900: #05529E;
-  --red-100: #FFDDDC;
-  --red-300: #EC5350;
-  --red-500: #E53935;
-  --green-100: #C8F3E5;
-  --green-500: #4CD7AB;
-  --green-700: #1EFFB8;
+  --blue-100: #f9faff;
+  --blue-150: #dcefff;
+  --blue-500: #42a5f5;
+  --blue-700: #008af9;
+  --blue-800: #4a89f2;
+  --blue-900: #05529e;
+  --red-100: #ffdddc;
+  --red-300: #ec5350;
+  --red-500: #e53935;
+  --green-100: #c8f3e5;
+  --green-500: #4cd7ab;
+  --green-700: #1effb8;
   --dark-300: #939393;
-  --dark-400: #4B4B4B;
+  --dark-400: #4b4b4b;
   --dark-500: #232323;
 }
 
@@ -157,7 +157,7 @@ img {
 }
 
 .light-blue {
-  background-color: #FDFDFF;
+  background-color: #fdfdff;
 }
 
 .copy-trade-benefits__list, .copy-trade-platform__list, .copy-trade-success__list, .copy-trade-advantage__list {
@@ -191,9 +191,16 @@ img {
   z-index: 2;
 }
 
+.copy-trade-hero-icons {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  z-index: 3;
+}
+
 .copy-trade-hero {
   padding-top: 50px;
-  background-color: #FDFDFD;
+  background-color: #fdfdfd;
 }
 
 .copy-trade-hero__sub-description {
@@ -317,6 +324,13 @@ img {
   top: -100px;
 }
 
+.platform-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
 .copy-trade-platform__text {
   margin-bottom: 15px;
 }
@@ -361,7 +375,7 @@ img {
   color: var(--light);
 }
 
-.cards {
+.copy-trade-platform-list {
   position: relative;
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgb(255, 255, 255) 7%, rgb(74, 137, 242) 0%, rgb(74, 137, 242) 50%, rgb(74, 137, 242) 80%, rgb(255, 255, 255) 80%);
@@ -382,11 +396,11 @@ img {
 }
 
 .border-hover.border-orange:hover:before {
-  background-color: #FDB74E;
+  background-color: #fdb74e;
 }
 
 .border-hover.border-purple:hover:before {
-  background-color: #9747FF;
+  background-color: #9747ff;
 }
 
 .border-hover.border-blue:hover:before {
@@ -448,8 +462,6 @@ img {
 
 .copy-trade-step__slide {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: var(--light);
 }
 
@@ -459,7 +471,7 @@ img {
 }
 
 .copy-trade-step__content {
-  padding: 100px 30px;
+  padding: 140px 30px;
 }
 
 .copy-trade-step__content-title {
@@ -577,7 +589,7 @@ img {
 
 .copy-trade-reg-title {
   font-size: clamp(3.13rem, -0.13rem + 13.87vw, 10.63rem);
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .copy-trade-reg__title {
@@ -590,7 +602,7 @@ img {
   padding: 50px 50px 10px 50px;
   border-radius: 18px;
   background-color: var(--light);
-  box-shadow: 22px 18px 70px -20px rgba(160, 160, 160, 0.15);
+  box-shadow: -3px 28px 100px -20px rgba(9, 19, 69, 0.08);
 }
 
 .copy-trade-reg__content {
@@ -664,6 +676,13 @@ img {
   padding-top: 200px;
 }
 
+.manage-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
 .row-padding {
   padding-bottom: 50px;
 }
@@ -678,7 +697,7 @@ img {
   justify-content: flex-end;
   align-items: center;
   max-width: 375px;
-  height: 100vh;
+  height: 900px;
   z-index: 1;
 }
 
@@ -793,11 +812,360 @@ img {
 }
 
 .copy-trade-news {
-  background-color: #1E3357;
+  background-color: #1e3357;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {
     background-image: url("../img/flags@2x.png");
+  }
+}
+@media (max-width: 1198px) {
+  .copy-trade-success__img-container,
+.copy-trade-platform__item {
+    padding: 50px;
+  }
+  .copy-trade-hero__title {
+    font-size: 46px;
+  }
+  .copy-trade-step__content {
+    padding: 120px 30px 0;
+  }
+  .copy-trade-success__item-title {
+    font-size: 1rem;
+  }
+  .copy-trade-success__list {
+    gap: 17px;
+  }
+  .copy-trade-platform__item {
+    justify-content: unset;
+  }
+  .copy-trade-success__title,
+.copy-trade-platform__title,
+.copy-trade-step__title,
+.copy-trade-benefits__title,
+.copy-trade-manage__title {
+    font-size: 24px;
+  }
+  .copy-trade-step__slider.owl-theme .owl-nav {
+    height: 60%;
+    right: -8%;
+  }
+  .copy-trade-step__slider.owl-theme .owl-dots {
+    right: -5.6%;
+  }
+  .owl-carousel .owl-stage-outer {
+    border-radius: unset;
+  }
+  .manage-icons {
+    top: -50px;
+  }
+  .copy-trade-hero-icons {
+    left: 0;
+  }
+}
+@media (max-width: 991.98px) {
+  .copy-trade-advantage__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+  .copy-trade-hero-icons {
+    left: unset;
+    right: 50px;
+  }
+  .copy-trade-advantage__item:last-child {
+    border-right: 1px solid rgba(245, 245, 245, 0.2);
+  }
+  .copy-trade-advantage__item:nth-child(2) {
+    border-right: unset;
+  }
+  .copy-trade-advantage__item:nth-last-child(n+2) {
+    border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+  }
+  .copy-trade-hero__description {
+    font-size: 0.875rem;
+  }
+  .copy-trade-hero__title {
+    font-size: 34px;
+  }
+  .copy-trade-hero {
+    padding-top: unset;
+  }
+  .copy-trade-success__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .copy-trade-platform__list {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  .copy-trade-platform__item:nth-child(3) {
+    order: 2;
+  }
+  .copy-trade-platform__item:last-child {
+    order: 1;
+  }
+  .copy-trade-step__slide {
+    flex-direction: column;
+    height: 100%;
+  }
+  .copy-trade-step__video {
+    flex-grow: 1;
+  }
+  .copy-trade-step__content,
+.copy-trade-step__video {
+    width: 100%;
+  }
+  .copy-trade-step__content {
+    height: 100%;
+  }
+  .owl-carousel .owl-stage-outer {
+    background-color: var(--light);
+  }
+  .owl-carousel .owl-stage-outer {
+    border-radius: 16px;
+  }
+  .copy-trade-step__content {
+    padding: 50px;
+  }
+  .copy-trade-step__slider.owl-theme .owl-nav {
+    position: unset;
+    top: unset;
+    left: unset;
+    transform: unset;
+    flex-direction: unset;
+    align-items: center;
+    height: unset;
+    max-width: 300px;
+    margin-inline: auto;
+  }
+  .copy-trade-step__slider.owl-theme .owl-dots {
+    top: unset;
+    bottom: 22px;
+    left: 45%;
+    right: unset;
+    flex-direction: unset;
+    transform: unset;
+  }
+  .slider-arrow.arrow-down,
+.slider-arrow.arrow-up {
+    transform: rotate(270deg);
+  }
+  .copy-trade-manage-img {
+    max-width: 100%;
+  }
+  .copy-trade-manage {
+    padding-top: 100px;
+  }
+  .copy-trade-manage-img {
+    background-color: transparent;
+  }
+  .copy-trade-step-bg {
+    position: absolute;
+    bottom: 23.8%;
+    left: 0;
+    background-color: var(--blue-800);
+    width: 100%;
+    height: 50%;
+  }
+  .slider-arrow > svg {
+    fill: var(--light);
+  }
+  .owl-theme .owl-dots .owl-dot span {
+    color: var(--light);
+  }
+  .owl-theme .owl-dots .owl-dot.active span {
+    color: var(--green-500);
+  }
+  .copy-trade-manage-title {
+    transform: unset;
+    margin-bottom: 0;
+  }
+  .copy-trade-manage-img {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .copy-trade-benefits {
+    top: -1000px;
+  }
+  .copy-trade-befits-img-container {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+  .copy-trade-befits-img-container img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .copy-trade-reg__form-wrapper {
+    top: -400px;
+  }
+}
+@media (max-width: 767.98px) {
+  .copy-trade-hero-icons {
+    left: unset;
+    right: 150px;
+  }
+  .copy-trade-advantage__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .copy-trade-advantage__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  .copy-trade-advantage__item-header {
+    margin-bottom: 0;
+    margin-right: 30px;
+    max-width: 210px;
+    flex: 1;
+  }
+  .copy-trade-advantage__body {
+    flex: 1;
+  }
+  .copy-trade-advantage__item:last-child,
+.copy-trade-advantage__item:first-child {
+    border-right: unset;
+  }
+  .copy-trade-advantage__item:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .copy-trade-success__list {
+    display: flex;
+    flex-direction: column;
+  }
+  .copy-trade-success__item {
+    display: flex;
+  }
+  .copy-trade-success__img-container {
+    flex: 1;
+  }
+  .copy-trade-success__body {
+    flex: 2;
+  }
+  .copy-trade-success__img-container,
+.copy-trade-success__body {
+    padding: 20px;
+  }
+  .copy-trade-hero {
+    padding-bottom: 70px;
+  }
+  .copy-trade-hero__header {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 575.98px) {
+  .copy-trade-hero-icons {
+    left: 0;
+    width: 100%;
+  }
+  .copy-trade-hero {
+    padding-bottom: 50px;
+  }
+  .copy-trade-hero-img {
+    top: 0;
+  }
+  .section-padding {
+    padding: 50px 0;
+  }
+  .copy-trade-hero__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .btn-base-small,
+.btn-base-lg {
+    padding: 10px 20px;
+  }
+  .copy-trade-step__content {
+    padding: 30px;
+  }
+  .copy-trade-success__img-container,
+.copy-trade-platform__item {
+    padding: 15px;
+  }
+  .copy-trade-success__item,
+.copy-trade-success__list {
+    flex-direction: column;
+  }
+  .copy-trade-success__title,
+.copy-trade-platform__title,
+.copy-trade-step__title,
+.copy-trade-benefits__title,
+.copy-trade-manage__title {
+    font-size: 1rem;
+  }
+  .copy-trade-advantage__header-title {
+    font-size: 30px;
+  }
+  .copy-trade-advantage__text,
+.copy-trade-manage__description,
+.copy-trade-benefits__content-text,
+.copy-trade-benefits__text,
+.copy-trade-step__description,
+.copy-trade-platform__item-text,
+.copy-trade-platform__text,
+.copy-trade-success__text,
+.copy-trade-hero__description,
+.copy-trade-platform__text {
+    font-size: 0.813rem;
+    line-height: 24px;
+  }
+  .copy-trade-step__text {
+    font-size: 12px;
+  }
+  .copy-trade-benefits__list,
+.copy-trade-advantage__item-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .copy-trade-advantage__body {
+    flex: 2;
+  }
+  .copy-trade-manage-img {
+    height: 400px;
+    right: unset;
+    left: 50%;
+    bottom: -200px;
+    transform: translate(-50%, -50%);
+  }
+  .copy-trade-manage-title {
+    font-size: 50px;
+    transform: rotate(-90deg);
+  }
+  .manage-icons {
+    top: -70px;
+  }
+  .copy-trade-step__slider.owl-theme .owl-dots {
+    left: 38%;
+  }
+  .copy-trade-platform__item:nth-child(-n+2) img {
+    width: 100px;
+  }
+  .copy-trade-banner__title {
+    margin-bottom: 7px;
+  }
+  .copy-trade-banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: 560px;
+    background-position: top -50px center;
+    min-height: 400px;
+  }
+  .copy-trade-benefits__list {
+    position: relative;
+    top: -100px;
+  }
+  .copy-trade-manage {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -405,6 +405,16 @@ img {
     left: 0;
     z-index: 3;
 }
+.copy-trade-platform {width: 100%;height: 100%;}
+
+.copy-trade-platform-bg {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 80%;
+    background-color: var(--blue-800);
+    z-index: 1;
+}
 
 .copy-trade-platform__title {
     @extend %h2-header;
@@ -430,7 +440,6 @@ img {
     overflow: hidden;
     position: relative;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     padding: 50px 76px;
     box-shadow: 20px 30px 70px -10px rgba(9, 19, 69, 0.1);
@@ -449,6 +458,7 @@ img {
 .copy-trade-platform__item:last-child {
     background-color: transparent;
     box-shadow: unset;
+ 
 
     &:hover {
         transform: unset;
@@ -462,14 +472,8 @@ img {
 
 .copy-trade-platform-list {
     position: relative;
-
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg,
-            rgba(255, 255, 255, 1) 7%,
-            rgba(74, 137, 242, 1) 0%,
-            rgba(74, 137, 242, 1) 50%,
-            rgba(74, 137, 242, 1) 80%,
-            rgba(255, 255, 255, 1) 80%);
+    width: 100%;
+    height: 100%;
 }
 
 .border-hover:before {
@@ -564,7 +568,7 @@ img {
 
 .copy-trade-step-slider {
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .copy-trade-step__title {
@@ -1001,7 +1005,8 @@ img {
 
     .manage-icons {
         top: -50px;
-    } 
+        left: 0;
+    }
 
     .copy-trade-hero-icons {
         left: 0;
@@ -1013,14 +1018,13 @@ img {
         grid-template-columns: repeat(2, 1fr);
         gap: 0;
     }
+
     .copy-trade-hero-icons {
         left: unset;
         right: 50px;
     }
 
-    .manage-icons {
-      
-    }
+ 
 
     .copy-trade-advantage__item:last-child {
         border-right: 1px solid rgba(245, 245, 245, 0.2);
@@ -1185,6 +1189,12 @@ img {
     .copy-trade-reg__form-wrapper {
         top: -400px;
     }
+
+    
+    .manage-icons {
+        top: -50px;
+        left: 18%;
+    }
 }
 
 @media (max-width: 767.98px) {
@@ -1254,16 +1264,27 @@ img {
     .copy-trade-hero__header {
         margin-top: 50px;
     }
+
+    .manage-icons {
+        top: -50px;
+        left: 0;
+    }
 }
 
 @media (max-width: 575.98px) {
-   
-    .copy-trade-platform__list{ gap: unset;}
-    .copy-trade-platform__item:not(:last-child) {margin-bottom: 17px;}
-    .copy-trade-hero-icons{
+
+    .copy-trade-platform__list {
+        gap: unset;
+    }
+
+    .copy-trade-platform__item:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .copy-trade-hero-icons {
         left: 0;
-        
-         width: 100%;
+
+        width: 100%;
     }
 
 
@@ -1282,6 +1303,11 @@ img {
 
     .section-padding {
         padding: 50px 0;
+    }
+
+    .manage-icons {
+        left: 0;
+        top: -100px
     }
 
     .copy-trade-hero__header {
@@ -1363,10 +1389,6 @@ img {
         transform: rotate(-90deg)
     }
 
-
-    .manage-icons {
-        top: -70px;
-    }
 
     .copy-trade-step__slider.owl-theme .owl-dots {
         left: 38%;

@@ -314,7 +314,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     max-width: 280px;
 }
 
@@ -324,7 +324,7 @@ img {
 }
 
 .copy-trade-advantage__header-title {
-    font-size: $font-size-80-50;
+    font-size: clamp(3.13rem, calc(3.13rem + 0.00vw), 3.13rem);
 }
 
 .copy-trade-advantage__header-text {
@@ -617,7 +617,7 @@ img {
 }
 
 .copy-trade-benefits__text {
-    max-width: 500px;
+    max-width: 960px;
     @extend %color-text;
     margin-inline: auto;
 }
@@ -1269,6 +1269,15 @@ img {
         top: -50px;
         left: 0;
     }
+
+    .splide__slide-text {
+        font-size: $font-size-14;
+    }
+
+    
+    .copy-trade-advantage__header-title {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -1287,6 +1296,10 @@ img {
         width: 100%;
     }
 
+ 
+    .copy-trade-advantage__item {
+        flex-direction: column;
+    }
 
     .copy-trade-step__content-title,
     .copy-trade-platform__item-title {
@@ -1343,10 +1356,7 @@ img {
     .copy-trade-manage__title {
         font-size: $font-size-16;
     }
-
-    .copy-trade-advantage__header-title {
-        font-size: 30px;
-    }
+ 
 
     .copy-trade-advantage__text,
     .copy-trade-manage__description,
